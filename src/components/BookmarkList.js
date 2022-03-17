@@ -15,7 +15,7 @@ export default function BookmarkList() {
   }, [])
 
   return (<ul>{bookmarks.map((bookmark) => (
-    <BookmarkItem key={bookmark.id} bookmark={bookmark} />
+    <BookmarkItem key={bookmark._id} bookmark={bookmark} />
   ))}
   <li>test from bookmark list</li></ul>);
 
